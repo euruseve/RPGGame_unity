@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3835263501814851928}
   m_Layer: 0
   m_Name: Player1Character3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
   m_VerticalDamping: 0
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_DeadZoneWidth: 0.75
-  m_DeadZoneHeight: 0.75
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
@@ -238,8 +238,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945298729970010718}
-  m_LocalRotation: {x: 0.51728445, y: 0.0000000071752435, z: -0.0000000043369757, w: 0.85581356}
-  m_LocalPosition: {x: -0.6217346, y: 6.6592336, z: -4.788872}
+  m_LocalRotation: {x: 0.51728445, y: -0.000000022088182, z: 0.000000013350889, w: 0.85581356}
+  m_LocalPosition: {x: 0, y: 8, z: -4.199997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1804,9 +1804,11 @@ GameObject:
   - component: {fileID: 4243776171464798589}
   - component: {fileID: 2226912582953011770}
   - component: {fileID: 7885484822759972896}
+  - component: {fileID: 816706847735099175}
+  - component: {fileID: 5399493447262078332}
   m_Layer: 0
   m_Name: Player1F3
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1929,6 +1931,35 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!54 &816706847735099175
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4285444828307636783}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &5399493447262078332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4285444828307636783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &4285446821019939063
 GameObject:
   m_ObjectHideFlags: 0

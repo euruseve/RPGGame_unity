@@ -14,9 +14,12 @@ public class PlayerMove : MonoBehaviour
     private float x, z;
     private float velocitySpeed;
 
-    CinemachineTransposer ct;
+    private CinemachineTransposer ct;
     public CinemachineVirtualCamera playerCam;
     private Vector3 pos, currPos;
+
+
+    public static bool canMove = true;
 
 
     // Start is called before the first frame update
@@ -43,22 +46,26 @@ public class PlayerMove : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
         {
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if(canMove)
+            {  
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if(Physics.Raycast(ray, out hit))
-            {
-                nav.destination = hit.point;
+                if(Physics.Raycast(ray, out hit))
+                {
+                    nav.destination = hit.point;
+                }
             }
         }
 
         if(velocitySpeed != 0)
-        {
+        {   
             anim.SetBool("sprinting", true);
         }
         if(velocitySpeed == 0)
         {
             anim.SetBool("sprinting", false);
         }
+
 
         if(Input.GetMouseButton(1))
         {
