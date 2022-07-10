@@ -9,6 +9,8 @@ public class InventoryItems : MonoBehaviour
     public GameObject openBook;
     public GameObject closedBook;
 
+    public GameObject messageBox;
+
     public Image[] emptySlots;
     public Sprite[] icons;
 
@@ -32,9 +34,8 @@ public class InventoryItems : MonoBehaviour
 
     public static bool key = true;
 
-
     public static int newIcon = 0;
-    public static int gold = 0;
+    public static int gold = 50;
     public static bool iconUpdate = false;
     private int max;
 
@@ -48,7 +49,7 @@ public class InventoryItems : MonoBehaviour
 
         redMushrooms = 0;
         purpleMushrooms = 0;
-        brownMushrooms = 0;
+        purpleMushrooms = 0;
         blueFlowers = 0;
         redFlowers = 0;
         roots = 0;
@@ -86,6 +87,7 @@ public class InventoryItems : MonoBehaviour
     {
         Time.timeScale = 0;
 
+        messageBox.SetActive(false);
         inventoryMenu.SetActive(true);
         openBook.SetActive(true);
         closedBook.SetActive(false);

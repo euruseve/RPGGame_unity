@@ -73,11 +73,11 @@ public class HintMessage : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             break;
 
             case 2:
-                message.text = InventoryItems.redMushrooms.ToString() + " purple mushrooms to be used in potions";
+                message.text = InventoryItems.purpleMushrooms.ToString() + " purple mushrooms to be used in potions";
             break;
 
             case 3:
-                message.text = InventoryItems.redMushrooms.ToString() + " brown mushrooms to be used in potions";
+                message.text = InventoryItems.purpleMushrooms.ToString() + " brown mushrooms to be used in potions";
             break;
 
             case 4:
@@ -85,51 +85,51 @@ public class HintMessage : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             break;
 
             case 5:
-                message.text = InventoryItems.blueFlowers.ToString() + " red flower to be used in potions";
+                message.text = InventoryItems.redFlowers.ToString() + " red flower to be used in potions";
             break;
 
             case 6:
-                message.text = InventoryItems.blueFlowers.ToString() + " roots to be used in potions";
+                message.text = InventoryItems.roots.ToString() + " roots to be used in potions";
             break;
 
             case 7:
-                message.text = InventoryItems.blueFlowers.ToString() + " leaf dew to be used in potions";
+                message.text = InventoryItems.leafDew.ToString() + " leaf dew to be used in potions";
             break;
 
             case 8:
-                message.text = InventoryItems.blueFlowers.ToString() + "key to open chests";
+                message.text = InventoryItems.key.ToString() + "key to open chests";
             break;
 
             case 9:
-                message.text = InventoryItems.blueFlowers.ToString() + " dragon eggs to be used in potions";
+                message.text = InventoryItems.dragonEgg.ToString() + " dragon eggs to be used in potions";
             break;
 
             case 10:
-                message.text = InventoryItems.blueFlowers.ToString() + " blue potion to be used in potions";
+                message.text = InventoryItems.bluePotion.ToString() + " blue potion to be used in potions";
             break;
 
             case 11:
-                message.text = InventoryItems.blueFlowers.ToString() + " purple potion to be used in potions";
+                message.text = InventoryItems.purplePotion.ToString() + " purple potion to be used in potions";
             break;
 
             case 12:
-                message.text = InventoryItems.blueFlowers.ToString() + " green potion to be used in potions";
+                message.text = InventoryItems.greenPotion.ToString() + " green potion to be used in potions";
             break;
 
             case 13:
-                message.text = InventoryItems.blueFlowers.ToString() + " red potion to be used in potions";
+                message.text = InventoryItems.redPotion.ToString() + " red potion to be used in potions";
             break;
 
             case 14:
-                message.text = InventoryItems.blueFlowers.ToString() + " bread used to replenish health";
+                message.text = InventoryItems.bread.ToString() + " bread used to replenish health";
             break;
 
             case 15:
-                message.text = InventoryItems.blueFlowers.ToString() + " cheese used to replenish health";
+                message.text = InventoryItems.cheese.ToString() + " cheese used to replenish health";
             break;
 
             case 16:
-                message.text = InventoryItems.blueFlowers.ToString() + " meat used to replenish health";
+                message.text = InventoryItems.meat.ToString() + " meat used to replenish health";
             break;
 
             default:

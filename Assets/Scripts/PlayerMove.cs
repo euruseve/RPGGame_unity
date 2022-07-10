@@ -20,6 +20,7 @@ public class PlayerMove : MonoBehaviour
 
 
     public static bool canMove = true;
+    public static bool moving = false;
 
 
     // Start is called before the first frame update
@@ -60,10 +61,12 @@ public class PlayerMove : MonoBehaviour
         if(velocitySpeed != 0)
         {   
             anim.SetBool("sprinting", true);
+            moving = true;
         }
         if(velocitySpeed == 0)
         {
             anim.SetBool("sprinting", false);
+            moving = false;
         }
 
 

@@ -10,11 +10,6 @@ public class Choose : MonoBehaviour
     public Text playerName;
     private int p = 0;
 
-    void Start()
-    {
-        
-    }
-
     public void Next()
     {
         if(p < characters.Length - 1)
